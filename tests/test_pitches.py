@@ -11,7 +11,7 @@ class TestPitch(unittest.TestCase):
         """
         This will create an instance of the User and Pitch before each test case
         """
-        self.new_user = User(name = "chris")
+        self.new_user = User(name = "Leah")
         self.new_pitch = Pitch(title = "Haha", user = self.new_user)
 
     def tearDown(self):
@@ -48,4 +48,4 @@ class TestPitch(unittest.TestCase):
         Will test whether the pitch is correctly related to the user who posted it
         """
         user = self.new_pitch.user.name
-        self.assertTrue(user == "chris")
+        self.assertTrue(user == "Leah")
