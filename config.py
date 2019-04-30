@@ -7,14 +7,14 @@ class Config:
     UPLOADED_PHOTOS_DEST = "app/static/photos"
     SECRET_KEY = '1234qwert'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://leah:blackpool005@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://leah:1234@localhost/pitch'
 
     #email stuff
     MAIL_SERVER = "leahgakii74@gmail.com"
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = 'leahgakii74@gmail.com'
-    MAIL_PASSWORD  = 'blackpool006'
+    MAIL_PASSWORD  = '1234'
 
 class DevConfig(Config):
     """
