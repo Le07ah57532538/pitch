@@ -6,7 +6,9 @@
 
 {% endblock%}
 {% block content%}
+
     <div class="container">
+        
         {% for message in get_flashed_messages() %}
         <div class="alert alert-danger">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -14,6 +16,13 @@
         </div>
         {% endfor %}
         {{wtf.quick_form(form)}}
-        <p>You don't have an account? <a class="login-btn btn-container d-block mt-2" href="{{url_for('auth.register')}}">Sign Up</a>
-    </div>
+        <p>You don't have an account? 
+            <button btn btn-danger><a class="login-btn btn-container d-block mt-2" href="{{url_for('auth.register')}}">Sign Up</a></button>
+            <style>
+                body{
+                    background-color: springgreen;
+                }
+            </style>
+        
+            
 {% endblock %}
